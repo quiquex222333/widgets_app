@@ -21,5 +21,6 @@ const appMenuItems = <MenuItem>[
   MenuItem(title: "Animated Container", subTitle: "Statefull Widget Animated", link: "/animated", icon: Icons.check_box_outline_blank_rounded),
   MenuItem(title: "UI Controls and Tiles", subTitle: "UI Controls Screen", link: "/ui-controls", icon: Icons.car_rental_rounded),
   MenuItem(title: "App Tutorial", subTitle: "Application tutorial, first steps", link: "/tutorial", icon: Icons.accessibility_new_rounded),
+  MenuItem(title: "Infinite Scroll and Pull", subTitle: "Infinite Lists, and Pull to refresh", link: "/infinite", icon: Icons.list_alt_rounded),
   
 ];
