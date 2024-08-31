@@ -16,15 +16,20 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
   Color color = Colors.indigo;
   double borderRadius = 10.0;
 
+  final int maxRGBValue = 255;
+  final int maxWidthSize = 300;
+  final int maxHeightSize = 300;
+  final int maxBorderRadius = 100;
+
   void changeShape() {
     final random = Random();
-    width = random.nextInt(300) + 50;
-    height = random.nextInt(300) + 50;
-    borderRadius = random.nextInt(100) + 10;
+    width = random.nextInt(maxWidthSize) + 50;
+    height = random.nextInt(maxHeightSize) + 50;
+    borderRadius = random.nextInt(maxBorderRadius) + 10;
     color = Color.fromRGBO(
-      random.nextInt(255),
-      random.nextInt(255),
-      random.nextInt(255),
+      random.nextInt(maxRGBValue),
+      random.nextInt(maxRGBValue),
+      random.nextInt(maxRGBValue),
       1,
     );
 
@@ -49,8 +54,9 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
           height: height <= 0 ? 0 : height,
           decoration: BoxDecoration(
             color: color,
-            borderRadius:
-                BorderRadius.circular(borderRadius < 0 ? 0 : borderRadius),
+            borderRadius: BorderRadius.circular(
+              borderRadius < 0 ? 0 : borderRadius,
+            ),
           ),
         ),
       ),
