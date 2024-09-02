@@ -74,7 +74,6 @@ class _ButtonsView extends StatelessWidget {
               color: Colors.white,
             ),
 
-            // custom butttons
             const CustomButton()
           ],
         ),

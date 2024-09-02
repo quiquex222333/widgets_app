@@ -56,9 +56,6 @@ class _CustomListTile extends StatelessWidget {
         color: colors.primary,
       ),
       onTap: () {
-        // Navigator.of(context).push(
-        //     MaterialPageRoute(builder: (context) => const ButtonsScreen()));
-        // Navigator.pushNamed(context, menuItem.link);
         context.push(menuItem.link);
       },
     );
